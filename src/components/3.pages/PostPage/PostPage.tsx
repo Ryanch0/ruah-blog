@@ -1,5 +1,8 @@
+import { useParams } from "react-router"
+
 const PostPage = () => {
-    return <>포스팅 페이지</>
+    const {title} = useParams()
+    return <>{title}</>
 }
 
 export default PostPage
