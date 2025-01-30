@@ -1,0 +1,11 @@
+.list_layout {
+    position: fixed;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.list {
+    line-height: 32px;
+}

@@ -1,5 +1,6 @@
 import { Menu } from "antd"
 import { useNavigate } from "react-router"
+import styles from './CustomMenu.module.scss'
 
 export type MenuType = {
     items: {
@@ -16,8 +17,12 @@ const CustomMenu = ({ items, mode = 'inline', className }: MenuType) => {
     return <Menu
         items={items}
         mode={mode}
-        className={className}
-        onClick={(info) => navigate(info.key)} />
+        className={`${styles.custom} ${className}`}
+        onClick={(info) => {
+            const category = info.keyPath[1]
+            navigate(`${info.key}?category=${category}`)
+        }
+        } />
 }
 
 export default CustomMenu

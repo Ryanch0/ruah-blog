@@ -19,7 +19,7 @@ const CustomLayout = ({ headerNode, leftSiderNode, children, rightSiderNode }: P
                     {leftSiderNode}
                 </Sider>
                 <Content className={styles.content}>{children}</Content>
-                <Sider className={styles.right_sider} width="25%">
+                <Sider className={styles.right_sider} width="20%">
                     {rightSiderNode}
                 </Sider>
             </Layout>

@@ -1,0 +1,25 @@
+.custom {
+    &:global(.ant-menu) {
+        background-color: rgb(18, 18, 18);
+        
+        :global(.ant-menu-submenu-title){
+            color: white;
+        }
+
+        li {
+            color: white;
+            &:active {
+                background-color: inherit !important;
+            }
+
+        }
+        :global(.ant-menu-item-active){
+            background-color: inherit;
+            color: rgb(252, 77, 113) !important;
+        }
+        :global(.ant-menu-item-selected){
+            background-color: inherit;
+            color: rgb(252, 77, 113);            
+        }
+    }
+}
